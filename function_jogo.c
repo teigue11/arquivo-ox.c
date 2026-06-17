@@ -21,7 +21,7 @@ void gravar(char matriz[3][3], char nomeArquivo[])
                 matriz[i][0], matriz[i][1], matriz[i][2]);
     }
 
-    fprintf(arquivo, "\nCriado por Davi Sales");
+    fprintf(arquivo, "\ncriado por derick");
 
     fclose(arquivo);
 }
