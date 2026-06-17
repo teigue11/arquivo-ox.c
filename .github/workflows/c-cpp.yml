@@ -13,14 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Listar arquivos
-      run: |
-        pwd
-        ls -la
-        find . -name configure
-
-    - name: configure
-      run: chmod +x ./configure && ./configure
-
-    - name: make
+    - name: Compilar
       run: make
+
+    - name: Testar
+      run: make check
